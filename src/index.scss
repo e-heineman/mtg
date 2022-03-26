@@ -11,3 +11,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+header {
+  background: lightgray;
+  color: red;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  .info {
+    text-align: right;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .link {
+    color: aqua;
+
+    &:hover {
+      opacity: .5;
+    }
+  }
+}
