@@ -1,7 +1,7 @@
 // import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import AddCard from './components/AddCard';
-import Cards from "./components/Card";
+import Collection from "./components/Collection";
 import FindCard from './components/FindCard';
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -18,7 +18,7 @@ function App() {
             </>
           } />
           <Route path='/add' element={<AddCard />} />
-          <Route path='/collection' element={<Cards />} />
+          <Route path='/collection' element={<Collection />} />
           <Route path='/find' element={<FindCard />} />
         </Routes>
         <Footer />

@@ -1,3 +1,5 @@
+@import "variables";
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -14,11 +16,12 @@ code {
 
 header {
   background: lightgray;
-  color: red;
+  color: orangered;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 
   .info {
+    font-family: $beleren;
     text-align: right;
   }
 
@@ -28,7 +31,9 @@ header {
   }
 
   .link {
-    color: aqua;
+    color: orangered;
+    font-family: $beleren;
+    text-decoration: none;
 
     &:hover {
       opacity: .5;
