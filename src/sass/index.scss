@@ -15,10 +15,17 @@ code {
 }
 
 header {
-  background: lightgray;
-  color: orangered;
+  background: aquamarine;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  
+  @include bp(medium) {
+    background: yellow;
+  }
+  
+  @include bp(large) {
+    background: lightgray;
+  }
 
   .info {
     font-family: $beleren;
@@ -31,7 +38,7 @@ header {
   }
 
   .link {
-    color: orangered;
+    color: $green;
     font-family: $beleren;
     text-decoration: none;
 

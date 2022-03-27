@@ -37,3 +37,26 @@ text-rendering: optimizeLegibility;
 $beleren: "Beleren Bold";
 $beleren-italic: "Beleren SmallCaps BoldItalic";
 $beleren-small: "Beleren SmallCaps Bold";
+
+/* Breakpoints */
+$breakpoints: (
+    xlarge: 1400px,
+    large: 1024px,
+    medium: 768px,
+    small: 640px,
+    xsmall: 480px,
+);
+
+@mixin bp($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+/* Colors */
+$green: #327864;
