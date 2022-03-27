@@ -1,11 +1,13 @@
 import React from 'react'
 import Card from "./Card";
 
-const Cards = () => {
+const Cards = ({ cards }) => {
   return (
     <>
-        <Card />
-        More cards...
+      {cards.map((card) => (
+        <Card key={card.id} card={card}/>
+      ))}
+      More cards...
     </>
   )
 }
