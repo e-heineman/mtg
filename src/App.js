@@ -24,7 +24,7 @@ function App() {
     const data = await res.json();
     const array = [];
     array.push(data);
-    console.log(array);
+    // console.log(array);
     return array;
   }
 

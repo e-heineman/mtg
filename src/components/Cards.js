@@ -7,7 +7,6 @@ const Cards = ({ cards }) => {
       {cards.map((card) => (
         <Card key={card.id} card={card}/>
       ))}
-      More cards...
     </>
   )
 }

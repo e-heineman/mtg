@@ -5,7 +5,7 @@ import Cards from "./Cards";
 const Collection = ({ cards }) => {
   return (
     <>
-    My collection of cards.
+    <h1>My Collection</h1>
     <Cards cards={cards}/>
     </>
   )

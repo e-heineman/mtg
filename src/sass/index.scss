@@ -14,9 +14,10 @@ code {
     monospace;
 }
 
-header {
+footer, header {
   background: aquamarine;
   display: grid;
+  font-family: $beleren;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   
   @include bp(medium) {
@@ -28,7 +29,6 @@ header {
   }
 
   .info {
-    font-family: $beleren;
     text-align: right;
   }
 
@@ -46,4 +46,33 @@ header {
       opacity: .5;
     }
   }
+}
+
+.search {
+  input[type="search"] {
+    background: $white;
+    border: 1px solid $green;
+    border-radius: 5px;
+    height: 35px;
+  }
+  
+  input[type="submit"] {
+    background: $green url(../images/icon-search.svg) no-repeat center;
+    border: 0;
+    border-radius: 5px;
+    height: 35px;
+    text-indent: -9999px;
+    width: 35px;
+  }
+}
+
+.visuallyHidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
