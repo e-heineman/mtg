@@ -1,4 +1,5 @@
 @import "variables";
+@import "search";
 
 body {
   margin: 0;
@@ -45,24 +46,6 @@ footer, header {
     &:hover {
       opacity: .5;
     }
-  }
-}
-
-.search {
-  input[type="search"] {
-    background: $white;
-    border: 1px solid $green;
-    border-radius: 5px;
-    height: 35px;
-  }
-  
-  input[type="submit"] {
-    background: $green url(../images/icon-search.svg) no-repeat center;
-    border: 0;
-    border-radius: 5px;
-    height: 35px;
-    text-indent: -9999px;
-    width: 35px;
   }
 }
 
