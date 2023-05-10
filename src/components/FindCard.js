@@ -25,7 +25,10 @@ const FindCard = () => {
       </form>
       {!submit ? (
       <p>Search for a card.</p> ) : (
-      <Card key={card.id} card={card}/>
+      <div className='searchResult'>
+        <Card key={card.id} card={card}/>
+        <button>Add to Collection</button>
+      </div>
       )}
     </>
   )
